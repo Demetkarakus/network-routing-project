@@ -37,38 +37,12 @@ The aim of this project was to design a scalable, secure and efficient network i
 - SSH-only remote management for device hardening
 - Connectivity and security validation using ping and CLI testing
 
-## Network Design
-
-The network was designed using a multi-site topology with routers representing each branch location. Each site included a Layer 2 switch and end devices assigned to different VLANs.
-
-![Network Topology](screenshots/network-topology.png)
-
-## Implementation Evidence
-
-### OSPF Configuration
-OSPF was used as the main dynamic routing protocol to support communication between the four sites.
-
-![OSPF Configuration](screenshots/ospf-configuration.png)
-
-### VLAN Configuration
-VLANs were configured to separate departments and improve network organisation and security.
-
-![VLAN Configuration](screenshots/vlan-configuration.png)
-
-### ACL and Firewall Rules
-Access Control Lists were used to control internet access and restrict unauthorised traffic.
-
-![ACL Firewall Rules](screenshots/acl-firewall-rules.png)
-
-### Connectivity Testing
-Ping testing was used to verify communication between devices across different branches.
-
-![Connectivity Testing](screenshots/connectivity-testing.png)
-
-### Internet Access Restriction
-Security testing confirmed that non-authorised branch devices were blocked from accessing external networks.
-
-![Internet Access Blocked](screenshots/internet-access-blocked.png)
+![Network Topology](network-topology.png)
+![OSPF Configuration](ospf-configuration.png)
+![VLAN Configuration](vlan-configuration.png)
+![ACL Firewall Rules](acl-firewall-rules.png)
+![Connectivity Testing](connectivity-testing.png)
+![Internet Access Blocked](internet-access-blocked.png)
 
 ## Testing and Validation
 
