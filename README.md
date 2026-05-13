@@ -37,12 +37,55 @@ The aim of this project was to design a scalable, secure and efficient network i
 - SSH-only remote management for device hardening
 - Connectivity and security validation using ping and CLI testing
 
+## Implementation Evidence
+
+### Network Topology
+
+The topology shows the multi-site network design connecting London, Leeds, Liverpool and Leicester using Cisco routers, Layer 2 switches and end devices.
+
 ![Network Topology](network-topology.png)
+
+---
+
+### OSPF Configuration
+
+OSPF was configured as the main dynamic routing protocol to support communication between the four branch sites and allow routes to be advertised automatically.
+
 ![OSPF Configuration](ospf-configuration.png)
+
+---
+
+### VLAN Configuration
+
+VLANs were implemented to separate departments such as Finance, Executive and Employees. This improves network organisation, segmentation and security.
+
 ![VLAN Configuration](vlan-configuration.png)
+
+---
+
+### ACL and Firewall Rules
+
+Access Control Lists were configured to control traffic flow and restrict unauthorised access, including limiting internet access to approved London branch devices.
+
 ![ACL Firewall Rules](acl-firewall-rules.png)
+
+---
+
+### Connectivity Testing
+
+Ping testing was used to verify communication between devices across different branches and confirm that routing and VLAN connectivity were working correctly.
+
 ![Connectivity Testing](connectivity-testing.png)
+
+---
+
+### Internet Access Restriction Testing
+
+Security testing confirmed that non-authorised branch devices were blocked from accessing external networks, while permitted London devices were able to reach the internet.
+
 ![Internet Access Blocked](internet-access-blocked.png)
+
+---
 
 ## Testing and Validation
 
